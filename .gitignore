@@ -1,0 +1,56 @@
+############################
+# Root-Umgebung / Secrets
+############################
+
+# Root-Env (für Docker, lokale Settings)
+.env
+
+############################
+# IDE / Editor
+############################
+
+.idea/
+.vscode/
+*.iml
+
+############################
+# Laravel (im Unterordner /laravel)
+############################
+
+/laravel/vendor/
+/laravel/node_modules/
+
+# Laravel storage & cache
+/laravel/storage/*.key
+/laravel/storage/app/*
+/laravel/storage/framework/*
+/laravel/storage/logs/*
+/laravel/bootstrap/cache/*
+
+# Symlink-Zeug / Vite
+/laravel/public/hot
+/laravel/public/storage
+/laravel/public/build
+
+# Laravel-Env & Test-Cache
+/laravel/.env
+/laravel/.phpunit.result.cache
+
+############################
+# Angular-Frontend (angenommen /frontend)
+############################
+
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.angular/
+/frontend/.angular/cache
+/frontend/npm-debug.log
+/frontend/yarn-error.log
+/frontend/package-lock.json    # optional, nur wenn du die nicht versionieren willst
+
+############################
+# Docker (optional)
+############################
+
+docker-compose.override.yml
+*.log

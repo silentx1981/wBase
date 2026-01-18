@@ -22,3 +22,13 @@ services:
     ports:
       - "3307:3307"
     command: --default-authentication-plugin=mysql_native_password
+
+  angular:
+    image: node:20
+    working_dir: /app
+    volumes:
+      - ./laravel/frontend:/app
+    command: npm start -- --host 0.0.0.0 --port 4200
+    ports:
+      - "4200:4200"
+
